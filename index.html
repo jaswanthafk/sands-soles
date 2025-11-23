@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sands & Souls | Kuwait</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Manrope', 'sans-serif'],
+              display: ['Anton', 'sans-serif'],
+            },
+            colors: {
+              sand: {
+                50: '#F7F7F5',
+                100: '#EBEBE9', // Main BG
+                200: '#DFDFD9',
+                300: '#CBCBC3',
+                400: '#A8A79E',
+                500: '#8C8B82',
+                600: '#706F68',
+                800: '#4A4945',
+                900: '#3D3C39',
+              },
+              accent: '#C1F055', // The neon lime
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #EBEBE9;
+        color: #3D3C39;
+        overflow-x: hidden;
+      }
+      .text-outline {
+        -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+        color: transparent;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      /* Ensure images blend nicely if they have white bgs */
+      .blend-image {
+        mix-blend-mode: multiply;
+      }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
